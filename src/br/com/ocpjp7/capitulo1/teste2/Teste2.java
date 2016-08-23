@@ -1,7 +1,5 @@
 package br.com.ocpjp7.capitulo1.teste2;
 
-import java.io.FileNotFoundException;
-
 interface I1 {
 	void m1() throws java.io.IOException;
 } 
@@ -13,7 +11,7 @@ interface I2 {
 public class Teste2 implements I1, I2 {
 
 	@Override
-	public void m1() throws FileNotFoundException {
+	public void m1()throws RuntimeException {
 		
 	}
 	
@@ -32,8 +30,8 @@ class TaskBase {
 class Filha extends TaskBase {
 	
 	@Override
-	int getStatusCode(String obj) {
-		return super.getStatusCode(obj);
+	int getStatusCode(Object obj) {
+		return 0;
 	}
 	
 }
