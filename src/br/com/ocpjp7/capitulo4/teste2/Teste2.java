@@ -47,7 +47,13 @@ public class Teste2 {
 
 }
 
-class Fruta<E> {
+/**
+ * 
+ * @author Weverton
+ *
+ * @param <E>
+ */
+class Fruta<E> implements Comparable<E> {
 
 	E nome;
 
@@ -57,6 +63,11 @@ class Fruta<E> {
 
 	public void setNome(E nome) {
 		this.nome = nome;
+	}
+
+	@Override
+	public int compareTo(E o) {
+		return nome.
 	}
 
 }
