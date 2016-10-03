@@ -53,7 +53,7 @@ public class Teste2 {
  *
  * @param <E>
  */
-class Fruta<E> implements Comparable<E> {
+class Fruta<E> {
 
 	E nome;
 
@@ -63,11 +63,6 @@ class Fruta<E> implements Comparable<E> {
 
 	public void setNome(E nome) {
 		this.nome = nome;
-	}
-
-	@Override
-	public int compareTo(E o) {
-		return nome.
 	}
 
 }
