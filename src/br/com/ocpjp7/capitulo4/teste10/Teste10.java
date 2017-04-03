@@ -9,7 +9,6 @@ public class Teste10 {
         
         //Parcel<Object> valor3 = new Parcel<>(); -> Não pode
         
-        
     }
     
 }
